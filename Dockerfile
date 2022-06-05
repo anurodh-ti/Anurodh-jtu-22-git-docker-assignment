@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 COPY . /assignment
 
 # Run FastAPI server on the port exposed above.
-CMD ["uvicorn","main:app","--reload" ]
+CMD [ "uvicorn", "main:app", "--host", "0.0.0.0", "--reload"]
